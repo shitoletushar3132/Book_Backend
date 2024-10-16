@@ -51,7 +51,7 @@ A RESTful API designed for managing books, users, and transactions (issuing and 
 
 ## **API Endpoints**
 
-## Deploy link: https://book-api-03.onrender.com/api/
+## Deploy link: https://book-api-03.onrender.com/api/show-books
 
 ### **Books**
 
