@@ -1,10 +1,12 @@
 const express = require("express");
 require("dotenv").config();
+const cors = require("cors");
 const app = express();
 const router = require("./routers/index");
 const connectionDB = require("./config/connectionDB");
 
 app.use(express.json());
+app.use(cors({origin:"*"}));
 app.use(express.urlencoded({ extended: true }));
 app.use("/api", router);
 const PORT = process.env.PORT || 5000; // Fallback to port 5000 if not defined in .env
